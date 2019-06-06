@@ -19,15 +19,23 @@ justify-content: space-around;
 nav a{
     text-decoration: none;
     font-family:  'Anton', sans-serif;
+    color: lawngreen;
 
     font-size: 20px;
 }
 
-img{
+nav a:hover{
+    color: blueviolet
+
+}
+
+nav img{
     cursor: pointer;
     display: none; 
     width: 32px;
-    height: 32px;     
+    height: 32px; 
+    padding: 10px;
+    border: 3px     
 }
 
 @media(max-width: 768px){
@@ -58,7 +66,7 @@ footer{
     background-color: magenta;
 }
 
-div{
+#Batata{
     grid-area: div;
     background-color: tomato;
 }
@@ -81,7 +89,39 @@ div{
                              "aside aside aside aside"
                              "div div div div"
                              "footer footer footer footer";
-    grid-template-rows: 20vh 50vh 50vh 50vh 50vh 40vh;
+    grid-template-rows: 20vh 60vh 60vh 60vh 60vh 40vh;
     }
+}
+
+.Meme{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    max-width: 90%;
+    border: 4px dotted magenta;
+    padding: 10px;
+}
+
+header,section,aside,#Batata{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icone{
+    width: 52px;
+    height: 52px;
+
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: blue;
+    width: 320px;
+    height: 32px;
+
 }
 
