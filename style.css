@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+}
+
+nav{
+background-color: yellow;
+height: 50px;
+display: flex;
+align-items: center;
+justify-content: space-around;
+}
+
+img{
+    cursor: pointer;
+    display: none; 
+    width: 32px;
+    height: 32px;     
+}
+
+@media(max-width: 768px){
+    nav a{
+        display: none;}
+        nav img{
+            display: block;
+        }
+    }
