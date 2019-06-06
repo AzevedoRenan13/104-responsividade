@@ -2,10 +2,9 @@ body{
     margin: 0;
     display: grid;
     grid-template-areas: "navbar navbar navbar navbar"
-                         "header header header header"
-                         "section section aside aside"
+                         "header section aside div"
                          "footer footer footer footer";
- grid-template-rows: 20vh 30vh 60vh 40vh;                        
+ grid-template-rows: 20vh 70vh 40vh;                        
 }
 
 nav{
@@ -59,14 +58,30 @@ footer{
     background-color: magenta;
 }
 
+div{
+    grid-area: div;
+    background-color: tomato;
+}
+
 @media(max-width: 768px){
+    body{
+        grid-template-areas: "navbar navbar navbar navbar"
+                             "header header section section"
+                             "aside aside div div"
+                             "footer footer footer footer";
+    grid-template-rows: 20vh 70vh 70vh 40vh  
+    }
+}
+
+@media(max-width: 475px){
     body{
         grid-template-areas: "navbar navbar navbar navbar"
                              "header header header header"
                              "section section section section"
                              "aside aside aside aside"
+                             "div div div div"
                              "footer footer footer footer";
-    grid-template-rows: 20vh 30vh 60vh 60vh 40vh;                         
-                             
+    grid-template-rows: 20vh 50vh 50vh 50vh 50vh 40vh;
     }
 }
+
